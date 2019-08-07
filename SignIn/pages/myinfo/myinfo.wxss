@@ -1,0 +1,25 @@
+/* pages/myinfo/myinfo.wxss */
+@import '/utils/weui.wxss';
+page{
+    height:100%;
+    min-height:100%;
+    color:#000;
+    font-family:"Microsoft Yahei","宋体";
+    font-size:14px;
+}
+.weather-img{
+    padding:20rpx;
+    text-align:center;
+    margin-top: 50rpx;
+}
+.today-img{
+    display:inline-block;
+    width: 235rpx;
+    height: 235rpx;
+}
+.weather{
+    font-size:21px;
+   text-align: center;
+    color: rgb(24, 25, 26);
+    font-weight: 700;
+}

@@ -1,0 +1,41 @@
+<!--pages/student_index/student_index.wxml-->
+<template name="msgItem">
+  <view class='lesson' bindtap='addlesson' data-id='{{courseID}}' data-lesson='{{courseName}}'data-class='{{ofClass}}'data-stime='{{buildTime}}'>
+    <view class='mylesson'>
+      <text class='slesson'>{{courseName}}</text>
+      <text class='sclass'>{{ofClass}}</text>
+    </view>
+    <view class='setTime'>
+      <text>{{buildTime}}</text>
+    </view>
+  </view>
+</template>
+<template name="tmsgItem">
+  <view class='lesson' bindtap='chooselesson' bindlongpress='deletelesson' data-id='{{courseID}}' data-lesson='{{courseName}}'data-class='{{ofClass}}'data-stime='{{buildTime}}'>
+    <view class='mylesson'>
+      <text class='slesson'>{{courseName}}</text>
+      <text class='sclass'>{{ofClass}}</text>
+    </view>
+    <view class='setTime'>
+      <text>{{buildTime}}</text>
+    </view>
+  </view>
+</template>
+
+<view style='display:{{viewhidden1}};'>
+
+  <view class='addlesson' >
+    <button style='background: {{bgcolor1}};' bindtap='all'>全部课程</button>
+    <button style='background: {{bgcolor2}};' bindtap='mine'>我的课程</button>
+  </view>
+  <view class='content_item' wx:for="{{student_lesson}}" wx:key="key">
+    <template is="msgItem" data="{{...item}}" />
+  </view>
+</view>
+
+
+<view style='display:{{viewhidden2}};'>
+  <view class='content_item' wx:for="{{student_lesson}}" wx:key="key">
+    <template is="tmsgItem" data="{{...item}}" />
+  </view>
+</view>

@@ -1,0 +1,53 @@
+<view class="userinfo">
+  <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+  <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+
+</view>
+
+<view class="swiper-tab"  style='display:{{viewhidden1}}'> 
+  <button class='btn1' bindtap='modalinput'>  
+    <image class='btnImg' src='/image/add.png'></image>  
+    <view>添加课程</view>  
+ </button> 
+</view> 
+<modal hidden="{{hiddenmodalput}}" title="课程添加" confirm-text="添加" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">
+    <input class='inputinfo'  type='text' placeholder="课程名称：" bindinput='setlesson' value='{{slesson}}' />
+    <input class='inputinfo'  type='text' placeholder="班级名称：" bindinput='setclass' value='{{sclass}}' />
+</modal>
+  
+<view class="hr"></view>
+<view style='display:{{viewhidden1}}'>
+  <view class='item' bindtap='historykaoqin'>
+    <view class="title" >历史考勤</view>
+    <view class="detail2">
+      <text>></text> 
+    </view>
+  </view>  
+  <view class="line"></view>
+</view>
+<view style='display:{{viewhidden2}}' >
+  <view class='item' bindtap='myInfomation'> 
+    <view class="title">我的信息</view>
+    <view class="detail2"> 
+      <text>></text> 
+    </view>
+  </view>
+  <view class="line"></view>
+</view>
+<view class='item' bindtap='feedback'>
+  <view class="title" >意见反馈</view>
+  <view class="detail2">
+    <text>></text>
+  </view>
+</view>
+<view class="line"></view>
+<view class="item" bindtap='aboutme'>
+  <view class="title">关于我们</view>
+  <view class="detail2">
+    <text> ></text>
+  </view>
+</view>
+<view class="line"></view>
+
+
+  

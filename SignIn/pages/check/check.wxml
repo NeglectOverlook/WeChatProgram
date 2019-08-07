@@ -1,0 +1,4 @@
+<view class="inputView" style="margin-top: 40% ">
+  <input class="input" type="number" placeholder="请输入考勤口令" placeholder-style="color: green" bindinput="keyInput" value='{{sginKey}}' />
+</view>
+<button class='kaoqin' type='primary' bindtap='GPSsubmit'>发起考勤</button>

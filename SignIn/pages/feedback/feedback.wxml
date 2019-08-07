@@ -1,0 +1,24 @@
+<!--pages/feedback/feedback.wxml-->
+<view class="page">
+<view class='style3'>
+<text >不忘初心，砥砺前行</text> 
+</view>
+  <view class='style1'> 
+    <textarea   placeholder="你要反馈的问题... "  maxlength='300' bindinput='limit' value="{{suggestText}}"      style="height: 12.3em"/> 
+    <!-- 显示字数 -->
+    <view class="clear">
+          <text style="color: #ccc; font-size: 14px; float: right; margin-right: 2%;">{{current}} /300</text>
+    </view>
+  </view>
+ <view class='style2'>
+  <button class="weui-btn green-btn"  bindtap='feedSend'>提交</button>
+ </view>
+
+<view class="weui-footer weui-footer_fixed-bottom">
+    <view class="weui-footer__links">
+      <navigator url="" class="weui-footer__link white">联系作者：abraham_zhou@qq.com</navigator>
+    </view>
+    <view class="weui-footer__text">Copyright © 2018-2019 南昌大学软件学院卓越162班周全</view>
+  </view>
+
+</view>

@@ -1,0 +1,28 @@
+/* pages/feedback/feedback.wxss */
+@import '/utils/weui.wxss';
+.style1{
+   border: 1px solid #000; 
+   border-radius: 10px;
+   margin-left: 70rpx;
+   margin-right: 70rpx;
+   margin-bottom: 70rpx;
+   margin-top: 100rpx;
+    padding: 10rpx;
+}
+.style2{
+     margin-left: 70rpx;
+   margin-right: 70rpx;
+}
+.style3{
+   text-align: center;
+   font-weight: 800;
+   font-size: 50rpx;
+   margin-top: 5%
+}
+.white{
+  color: #000;
+}
+.green-btn{
+background-color: #000;
+color:#fff;
+}

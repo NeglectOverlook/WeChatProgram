@@ -1,0 +1,5 @@
+<!--pages/historylist/historylist.wxml-->
+<view class='record' wx:for="{{record}}" bindtap='chooserecord' data-keyid='{{item.checkID}}' data-lessonid='{{item.courseID}}'>
+  <view class='times'>第{{index+1}}次考勤</view>
+  <text class='time'>{{item.checkTime}}</text>
+</view>

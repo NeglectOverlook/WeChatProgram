@@ -1,0 +1,18 @@
+<!--pages/history/history.wxml-->
+<template name="tmsgItem">
+  <view class='lesson' bindtap='historyRecord' data-id='{{courseID}}' data-lesson='{{courseName}}'data-class='{{ofClass}}'data-stime='{{buildTime}}'>
+    <view class='mylesson'>
+      <text class='slesson'>{{courseName}}</text>
+      <text class='sclass'>{{ofClass}}</text>
+    </view>
+    <view class='setTime'>
+      <text>{{buildTime}}</text>
+    </view>
+  </view>
+</template>
+
+<view>
+  <view class='content_item' wx:for="{{student_lesson}}">
+    <template is="tmsgItem" data="{{...item}}" />
+  </view>
+</view>

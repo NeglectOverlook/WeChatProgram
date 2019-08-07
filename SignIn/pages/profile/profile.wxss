@@ -1,0 +1,82 @@
+
+.userinfo {
+  margin-top:20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+.userinfo-nickname {
+  color: #aaa;
+}
+/*顶部切换*/
+.swiper-tab{
+  padding:10px 0px;
+  height:50px;
+  line-height: 30px;
+  background: #FFF;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.btn1 {
+  width: 200px;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  background-color: #f85f48;
+  color: white;
+  border-radius: 98rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnImg {
+  margin-right: 15rpx;
+  width: 46rpx;
+  height: 46rpx;
+}
+.btn1::after {
+  border-radius: 98rpx;
+  border: 0; 
+}
+.hr {
+  width: 100%;
+  height: 15px;
+  background-color: #f4f5f6;
+}
+.item {
+  display: flex;
+  flex-direction: row;
+}
+.title {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  font-size: 15px;
+}
+.detail2 {
+  font-size: 15px;
+  position: absolute;
+  right: 10px;
+  height: 50px;
+  line-height: 50px;
+  color: #888;
+}
+.line {
+  border: 1px solid #ccc;
+  opacity: 0.2;
+}
+.inputinfo{
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  margin: 20px;
+}

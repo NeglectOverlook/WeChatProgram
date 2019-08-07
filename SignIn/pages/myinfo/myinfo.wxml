@@ -1,0 +1,10 @@
+<!--pages/myinfo/myinfo.wxml-->
+<view class="content">
+  <view class="weather-img">
+      <image src="/image/student.png" class="today-img"></image>
+  </view>
+  <view class="weather">姓名：{{myName}}</view>    
+  <view class="weather">学号：{{myNum}}</view>
+
+  
+</view>
