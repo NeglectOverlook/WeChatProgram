@@ -14,7 +14,7 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.6.6",
-	"appid": "wx87ab1dcbe354582",
+	"appid": "你自己的APPID",
 	"projectname": "signIn",
 	"debugOptions": {
 		"hidedInDevtools": []
