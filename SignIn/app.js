@@ -1,11 +1,11 @@
 //app.js
 App({
   onLaunch: function () {
-    console.log("执行0");
+   
     var OPEN_ID = '';
     wx.login({
       success: function (res) { 
-        console.log("执行1");
+        
         var code = res.code;//发送给服务器的code 
         if (code) {
           wx.request({  
@@ -45,7 +45,7 @@ App({
                     wx.switchTab({
                       url: '/pages/student_index/student_index'
                     });
-                    console.log("已经执行跳转了老师");
+                   
                   }
                   else {
                     console.log("unknow");
