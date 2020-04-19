@@ -59,7 +59,7 @@ Page({
     })
     if ((that.data.sname && that.data.snum)!='') {
       var userid = wx.getStorageSync('openid');
-      console.log("userid1:"+userid);
+      
       wx.request({
         url: 'https://www.xxxx.com',
         data: {
@@ -158,7 +158,7 @@ Page({
     var identify = wx.getStorageSync("identify");
     if(identify=='student'||identify=='teacher'){
       console.log("identify:" + identify);
-      console.log("已注册用户停留在注册页面，跳转失败"); 
+  
     }
     
     
