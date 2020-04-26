@@ -11,7 +11,6 @@ Page({
     tname: "",
     tnum: "",
   },
-  //点击按钮弹出指定的hiddenmodalput弹出框
   modalinput1: function (e) {
     if (e.detail.userInfo) {
       this.setData({
@@ -40,7 +39,7 @@ Page({
   goLesson: function () {
     wx.navigateTo({ url: '../lesson/lesson' })
   },
-  //取消按钮
+
   cancel1: function () {
     this.setData({
       hiddenmodalput1: true,
@@ -51,7 +50,7 @@ Page({
       hiddenmodalput2: true,
     });
   },
-  //确认
+
   confirm1: function (e) {
     var that = this;
     this.setData({
@@ -82,7 +81,7 @@ Page({
             
         },
         fail: function (res) {
-          console.log("学生注册失败");
+          
         },
         complete: function (res) { },
       })
@@ -121,7 +120,7 @@ Page({
           });
         },
         fail: function (res) {
-          console.log("老师注册失败");
+         
         },
         complete: function (res) { },
       })
