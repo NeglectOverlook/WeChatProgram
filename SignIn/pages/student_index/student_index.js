@@ -57,7 +57,7 @@ Page({
       ismine: true
     })
     var that = this;
-    var userid = wx.getStorageSync('openid');//用户id
+    var userid = wx.getStorageSync('openid');
     wx.request({
       method: 'POST',
       header: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -96,10 +96,10 @@ Page({
   },
   addlesson: function (e) {
     var lessonid = e.currentTarget.dataset.id;
-    console.log('课程编号：'+lessonid);
+    
     var slesson = e.currentTarget.dataset.lesson;
-    console.log('课程名：' + slesson);
-    var userid = wx.getStorageSync('openid');//用户id
+   
+    var userid = wx.getStorageSync('openid');
     if (this.data.ismine == false) {
       wx.showModal({
         title: slesson,
@@ -129,7 +129,7 @@ Page({
                 }
               },
               fail: function (res) {
-                console.log("添加课程失败学生");
+                
                },
             })
           } else {
@@ -146,9 +146,9 @@ Page({
   },
   chooselesson:function(e){
     var lessonid = e.currentTarget.dataset.id;
-    console.log('进入考勤获取ID：' + lessonid);
+    
     var slesson = e.currentTarget.dataset.lesson;
-    console.log('课程名：' + slesson);
+   
     wx.request({
       url: 'https://www.xxxx.com',
       data: {
@@ -179,9 +179,9 @@ Page({
   }, 
   deletelesson:function(e){
     var lessonid = e.currentTarget.dataset.id;
-    console.log('进入删除获取ID：' + lessonid);
+    
     var slesson = e.currentTarget.dataset.lesson;
-    console.log('删除课程名：' + slesson);
+   
     wx.showModal({
       title: '删除课程',
       content: '确定要删除《' + slesson + '》吗。会删除相关的所有记录。',
@@ -220,13 +220,13 @@ Page({
 
         }
       },
-      fail: function (res) { },//接口调用失败的回调函数
-      complete: function (res) { },//接口调用结束的回调函数（调用成功、失败都会执行）
+      fail: function (res) { },
+      complete: function (res) { },
     })
     
 
   },
-  onPullDownRefresh: function () { //下拉刷新
+  onPullDownRefresh: function () { 
     var that = this;
     var identify = wx.getStorageSync("identify");
     if (identify == 'teacher') {
@@ -252,13 +252,13 @@ Page({
           })
         },
         complete: function (res) {
-          wx.hideNavigationBarLoading(); //完成停止加载
-          wx.stopPullDownRefresh(); //停止下拉刷新
+          wx.hideNavigationBarLoading();
+          wx.stopPullDownRefresh(); 
         },
       })
     } else {
       wx.hideNavigationBarLoading(); //完成停止加载
-      wx.stopPullDownRefresh(); //停止下拉刷新
+      wx.stopPullDownRefresh(); 
     }
   },
   /**
@@ -268,7 +268,7 @@ Page({
     var that = this;
     var identify = wx.getStorageSync("identify");
     console.log("identify:"+identify);
-    var userid = wx.getStorageSync('openid');//用户id
+    var userid = wx.getStorageSync('openid');
     if(identify=='teacher'){
       that.setData({
         viewhidden1: 'none',
