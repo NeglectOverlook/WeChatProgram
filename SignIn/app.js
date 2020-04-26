@@ -6,7 +6,7 @@ App({
     wx.login({
       success: function (res) { 
         
-        var code = res.code;//发送给服务器的code 
+        var code = res.code;
         if (code) {
           wx.request({  
             url: 'https://www.xxxx.com',
@@ -19,11 +19,11 @@ App({
               'content-type': 'application/json'
             },
             success: function (res) {
-              OPEN_ID = res.data.openid;//获取到的openid  
-              var SESSION_KEY = res.data.session_key;//获取到session_key
+              OPEN_ID = res.data.openid;
+              var SESSION_KEY = res.data.session_key;
               console.log(OPEN_ID);
               console.log(SESSION_KEY);
-              wx.setStorageSync('openid', OPEN_ID);//将获取信息写入本地缓存  
+              wx.setStorageSync('openid', OPEN_ID); 
               wx.request({
                 url: 'https://www.xxxx.com',
                 data: {
