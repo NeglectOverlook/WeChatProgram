@@ -18,3 +18,4 @@
      ![history](https://github.com/NeglectOverlook/WeChatProgram/blob/master/picture/6.jpg "历史记录")
      ![已签到名单](https://github.com/NeglectOverlook/WeChatProgram/blob/master/picture/7.jpg "已签到名单")
      ![history](https://github.com/NeglectOverlook/WeChatProgram/blob/master/picture/8.jpg "历史记录")
+# 联系作者：abraham_zhou@qq.com
