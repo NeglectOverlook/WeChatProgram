@@ -1,9 +1,7 @@
 // pages/sign/sign.js
 Page({
 
-  /**
-   * 页面的初始数据  
-   */
+
   data: {
     signKey: "",
     id: "",
@@ -31,11 +29,11 @@ Page({
         wx.showModal({
           title: '是否授权位置信息',
           content: '你需要授权位置信息才可以进行签到',
-          showCancel: true,//是否显示取消按钮
-          cancelText: "否",//默认是“取消”
-          cancelColor: 'black',//取消文字的颜色
-          confirmText: "是",//默认是“确定”
-          confirmColor: 'black',//确定文字的颜色
+          showCancel: true,
+          cancelText: "否",
+          cancelColor: 'black',
+          confirmText: "是",
+          confirmColor: 'black',
           success: function (res) {
             if (res.confirm) {
               wx.openSetting({
