@@ -6,6 +6,7 @@ App({
     wx.login({
       success: function (res) { 
         
+
         var code = res.code;
         if (code) {
           wx.request({  
@@ -21,8 +22,7 @@ App({
             success: function (res) {
               OPEN_ID = res.data.openid;
               var SESSION_KEY = res.data.session_key;
-              console.log(OPEN_ID);
-              console.log(SESSION_KEY);
+              
               wx.setStorageSync('openid', OPEN_ID); 
               wx.request({
                 url: 'https://www.xxxx.com',
@@ -63,11 +63,11 @@ App({
           })
         }
         else { 
-          console.log('登录失败！' + res.errMsg);
+         
         }
       },
       fail: function (res) {
-        console.log("获取用户登录态失败！" + res.errMsg);
+        
       },
       complete: function (res) { },
     })
