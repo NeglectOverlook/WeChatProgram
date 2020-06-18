@@ -18,7 +18,7 @@
     <view class="weui-footer__links">
       <navigator url="" class="weui-footer__link white">赣ICP备19006285号-1</navigator>
     </view>
-    <view class="weui-footer__text">Copyright © 2018-2019 南昌大学软件学院卓越162班周全</view>
+    <view class="weui-footer__text">Copyright © 2018-2019 南昌大学软件学院</view>
   </view>
   
 </view>
